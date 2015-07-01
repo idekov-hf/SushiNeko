@@ -129,6 +129,9 @@ typedef NS_ENUM(NSUInteger, CCEffectTexCoordMapping)
 @property (nonatomic, strong) NSDictionary* uniformTranslationTable;
 @property (nonatomic, assign) BOOL needsClear;
 
+// Hack to fix memory error for Sushi Game
+- (void)verts_setter:(CCSpriteVertexes*)svp;
+
 @end
 
 
